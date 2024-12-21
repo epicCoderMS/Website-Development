@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+
+        /* element selectors */
+        div{
+            background-color: rgb(182, 51, 182);
+        }
+
+        /* class selectors */
+        .red{
+            background-color: rgb(190, 116, 116);
+        }
+
+        /* id selectors */
+        #yellow{
+            background-color: rgb(201, 201, 88);
+        }
+
+        /* child selectros */
+        div > p :first-child{
+            color: aqua;
+            background-color: rgb(48, 160, 80);
+        }
+
+        /* descendant selectors */  /* not child but its descendant */
+        div h5 {
+            background-color: navajowhite;
+            color: rebeccapurple;
+        }
+
+        /* universal selector */
+        * {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* pseudo selector */  /*used with links*/
+        a:visited{     /*  a link that visited*/
+            color: green;
+        }
+        a:link {     /*  a link that not visited*/
+            color: red;
+        }
+        a:active{    /* when click on link */
+            background-color: rgb(11, 54, 110);
+        }
+        a:hover{  /* when hover( take cursor) on link*/
+            background-color: blanchedalmond;
+        }
+
+        p:first-child{  /* in this every first p tag  will affected*/
+            background-color: brown;
+        }
+        
+        
+    </style>
+</head>
+<body>
+        <div>
+            this text in div class
+        </div>
+        <div class="red">
+            this another div with class selectors
+        </div>
+        <div id="yellow">
+            this is id selector
+        </div>
+
+        <div>
+            this is parent div
+            <p>
+                this is example of paragraph inside div
+            </p>
+        </div>
+
+        <div>
+            <article>
+                <h5>
+                    this is the example of the  descendant  selectors
+                </h5>
+            </article>
+        </div>
+
+        <div>
+            <a href="https://www.google.com"> google search</a>
+            <a href="https://www.facebook.com"> visit facebook</a>
+            <a href="https://www.instagram.com"> login instagram</a>
+        </div>
+
+        <div class="one">
+            this is the one selectors
+            <main>
+                <p>
+                    this is first
+                </p>
+                <p>
+                    this is second
+                </p>
+            </main>
+        </div>
+        
+</body>
+</html>

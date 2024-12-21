@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box model</title>
+    <style>
+        *{
+            margin: 0cm;
+            padding: 0cm;
+        }
+        .box{
+            background-color: aquamarine;
+        }
+        .box1{
+            color: rgb(250, 144, 115);
+            padding: 15px;
+            margin: 35px; /* in this only this margin will be concedered because of concept "margin collapse" */
+            border: 2px solid blue;                               /* margin collapse : 
+                                                          if there is two or more box with margin
+                                                          in center area  of that boxes, the 
+                                                          higher margin will be considered 
+                                                          in that center area 
+                                                          
+                                                          figure:
+                                                          |-----------------|
+                                                          |  Element A      |
+                                                          |-----------------|
+                                                          |                 |  <-- Collapsed Margin (35px)
+                                                          |-----------------|
+                                                          |  Element B      |
+                                                          |-----------------|  */
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: blue;
+            padding: 15px;
+            margin: 25px;
+            border: 2px solid rgb(226, 18, 181);
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"> this is the box</div>
+    <div class="box box2"> i am the another box</div>
+</body>
+</html>
