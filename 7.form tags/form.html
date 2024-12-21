@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form tags</title>
+  </head>
+  <body>
+    <h1>apply for job</h1>
+    <form action="" method="post">
+      <div>
+        <label for="nm">enter your name</label>
+        <input
+          type="text"
+          id="nm"
+          name="nm"
+          placeholder="enter here"
+          autofocus
+        />
+      </div>
+      <div>
+        <label for="gen">select gender</label>
+        <input type="radio" id="male" name="gen" />male
+        <input type="radio" id="female" name="gen" />female
+      </div>
+      <div>
+        <select name="age" id="age">
+          <option value="age">age</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+      <div>
+        <input type="checkbox" id="conditions" name="conditions" />
+        <label for="conditions">i agree to terms & conditions</label>
+      </div>
+    </form>
+  </body>
+</html>
